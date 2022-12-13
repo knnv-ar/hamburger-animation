@@ -7,3 +7,5 @@ URL: https://youtu.be/R00QiudbD4Y
 Youtube channel: https://www.youtube.com/@KevinPowell
 
 ## Notes:
+
+3:59
