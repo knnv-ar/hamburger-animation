@@ -65,6 +65,18 @@ button {
 
 /* button two*/
 
-.button-two .hamburger {
+.button-two {
   --button-color: #232;
+}
+
+.button-two .line {
+  animation: to-open-icon;
+}
+
+.button-two:hover .line {
+  animation: to-close-icon;
+}
+
+@keyframes to-close-icon {
+
 }
