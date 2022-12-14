@@ -8,4 +8,4 @@ Youtube channel: https://www.youtube.com/@KevinPowell
 
 ## Notes:
 
-11:15
+25:55
