@@ -112,7 +112,7 @@ button {
   transition: translate 1s, rotate 1s;
 }
 
-.button-three:hover .hamburger {
+.button-three[aria-expanded="true"] .hamburger {
   translate: 10px -10px;
   rotate: .125turn
 }
@@ -122,7 +122,7 @@ button {
   stroke-dasharray: 60 31 60 1000;
 }
 
-.button-three:hover .line {
+.button-three[aria-expanded="true"] .line {
   stroke-dasharray: 60 105 60 1000;
   stroke-dashoffset: -90;
 }
