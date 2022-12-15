@@ -70,13 +70,59 @@ button {
 }
 
 .button-two .line {
-  animation: to-open-icon;
+  animation: to-open-icon 1s forwards;
 }
 
 .button-two:hover .line {
-  animation: to-close-icon;
+  animation: to-close-icon 1s forwards;
+}
+
+.button-two .line.top {
+  --rotation: -45deg;
+  transform-origin: 65px 45px;
+}
+
+.button-two .line.bottom {
+  --rotation: 45deg;
+  transform-origin: 60px 55px;
 }
 
 @keyframes to-close-icon {
+  0% { stroke-dashoffset: 0; }
+  40% { stroke-dashoffset: 79.9; }
+  60% { stroke-dashoffset: 79.9; rotate: var(--rotation); }
+  100% { stroke-dashoffset: 0; rotate: var(--rotation); }
+}
 
+@keyframes to-open-icon {
+  0% { stroke-dashoffset: 0; rotate: var(--rotation); }
+  40% { stroke-dashoffset: 79.9; rotate: var(--rotation); }
+  60% { stroke-dashoffset: 79.9; }
+  100% { stroke-dashoffset: 0; }
+}
+
+/* button three */
+
+.button-three {
+  --button-color: black;
+  overflow: hidden;
+}
+
+.button-three .hamburger {
+  transition: translate 1s, rotate 1s;
+}
+
+.button-three:hover .hamburger {
+  translate: 10px -10px;
+  rotate: .125turn
+}
+
+.button-three .line {
+  transition: 1s;
+  stroke-dasharray: 60 31 60 1000;
+}
+
+.button-three:hover .line {
+  stroke-dasharray: 60 105 60 1000;
+  stroke-dashoffset: -90;
 }
